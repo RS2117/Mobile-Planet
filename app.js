@@ -2,7 +2,7 @@ const express = require('express');
 
 cors = require('cors');
 const httpStatusCode = require('http-status-codes');
-const apiRoutes = require('./server/routes/api.routes');
+const apiRoutes = require('./routes/api.routes');
 
 require('dotenv').config();
 
