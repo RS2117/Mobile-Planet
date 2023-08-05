@@ -1,0 +1,8 @@
+{
+  "appId": "com.mobileplanet.app",
+  "appName": "mobile-planet",
+  "webDir": "client/src",
+  "server": {
+    "androidScheme": "https"
+  }
+}
