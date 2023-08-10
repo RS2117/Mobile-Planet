@@ -2,13 +2,14 @@ const express = require('express');
 
 cors = require('cors');
 const httpStatusCode = require('http-status-codes');
-const apiRoutes = require('./routes/api.routes');
+const apiRoutes = require('./server/routes/api.routes');
 
 require('dotenv').config();
 
-require('./config/db');
+require('./server/config/db');
 
 const app = express();
+app.use(express.static("clientns"));
 app.use(cors());
 app.use(express.json());
 app.use('/api', apiRoutes);
