@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 
-mongoose.connect(mongoDB_Url);
+mongoose.connect(MongoDB_Url);
 mongoose.connection.on('connected',()=>{
     console.log('connected');
 });
