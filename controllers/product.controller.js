@@ -7,7 +7,7 @@ const cashRegister = require('../models/cashRegister.model');
 
 
 router.get('/',(req, res) => {
-product.find({},{"_id": 1,"name": 1,"category": 1, "brand": 1, "model": 1,"price": 1 }).then(docs=>{
+product.find({},{"_id": 1,"name": 1,"category": 1, "brand": 1, "model": 1,"price": 1 , "quantity": 1}).then(docs=>{
         res.send(docs);
     }).catch(err=>{
         res.status(httpStatusCode.INTERNAL_SERVER_ERROR).send(err);
@@ -35,6 +35,7 @@ product.find({},{"_id": 1,"name": 1,"category": 1, "brand": 1, "model": 1,"price
         brand: obj.brand ,
         model: obj.model ,
         price: obj.price ,
+        quantity: obj.quantity,
         created_at: obj.created_at ,
         description: obj.description ,
         updated_at: obj.updated_at ,

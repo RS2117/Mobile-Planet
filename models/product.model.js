@@ -8,6 +8,7 @@ const productSchema = new Schema({
     brand:{type:String, required:true},
     model:{type:String, required:true},
     price:{type:String, required:true},
+    quantity:{type:String, required:true},
     description   : { type: String},
     tv_screen_size   :{type:String},
     case_quality : {type:String },
