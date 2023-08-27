@@ -9,7 +9,7 @@ require('dotenv').config();
 require('./config/db');
 
 const app = express();
-app.use(express.static("clientns"));
+app.use(express.static("client"));
 app.use(cors());
 app.use(express.json());
 app.use('/api', apiRoutes);
